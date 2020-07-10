@@ -14,6 +14,9 @@ import { AppRoutes } from './app.routing';
 
 // App Component
 import { AppComponent } from './app.component';
+import { AppCustomLayoutComponent } from './layout/app-custom-layout/app-custom-layout.component';
+import { HeaderComponent } from './layout/header/header.component';
+import { FooterComponent } from './layout/footer/footer.component';
 
 @NgModule({
     imports: [
@@ -25,7 +28,10 @@ import { AppComponent } from './app.component';
     declarations: [
         AppComponent,
         CommonLayoutComponent,
-        AuthenticationLayoutComponent
+        AuthenticationLayoutComponent,
+        AppCustomLayoutComponent,
+        HeaderComponent,
+        FooterComponent
     ],
     providers: [TemplateService],
     bootstrap: [AppComponent]
