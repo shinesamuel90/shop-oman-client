@@ -36,7 +36,7 @@ import { AdminModule } from './modules/admin/admin.module';
 ];
 
 @NgModule({
-    imports: [RouterModule.forRoot(AppRoutes)],
+    imports: [RouterModule.forRoot(AppRoutes,{ useHash: true })],
     exports: [RouterModule]
   })
   export class AppRoutingModule { }
