@@ -4,11 +4,11 @@ import { MainComponent } from './page/main/main.component';
 
 
 const routes: Routes = [
-  // {
-  //   path: '',
-  //   redirectTo: '/main',
-  //   pathMatch: 'full'
-  // },
+  {
+    path: '',
+    redirectTo: '/home/main',
+    pathMatch: 'full'
+  },
   {
     path: '',
     children: [
