@@ -26,10 +26,11 @@ import { AdminFooterComponent } from './layout/admin-footer/admin-footer.compone
 import { AdminNavComponent } from './layout/admin-nav/admin-nav.component';
 import { HomeNavComponent } from './layout/home-nav/home-nav.component';
 import { AppRoutingModule } from './app.routing';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
     imports: [
         BrowserModule,
+        BrowserAnimationsModule,
         AppRoutingModule,
         SharedModule,
         TemplateModule

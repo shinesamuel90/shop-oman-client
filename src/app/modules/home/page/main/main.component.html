@@ -232,11 +232,11 @@
 
 
 
-
-    <div class="slider-area" style="">
-        <!-- <div class="slider-active owl-dot-style owl-carousel"> -->
-        <div class="slider-active owl-dot-style ">
-            <!-- <div class="single-slider pt-40 pb-40 bg-img" style="background-image: url('/assets/img/slider/slider-1.jpg');"> -->
+    <!-- <div class="slider-area" style="">
+        
+            <div>
+                 <owl-carousel-o [options]="customOptions">
+           
                 <div class="single-slider pt-40 pb-40 bg-img" [ngStyle]="{'background-image' : 'url(assets/img/slider/slider-1.jpg)'}">
                 <div class="container">
                     <div class="slider-content slider-animated-1 w-50 bg-slider">
@@ -265,8 +265,46 @@
                     </div>
                 </div>
             </div> 
+        </owl-carousel-o>
         </div>
-    </div>
+    </div> -->
+    <div class="slider-area">
+        <owl-carousel-o [options]="customOptions">
+      
+        
+            <ng-template class="slide"  carouselSlide >
+          <div class="pt-40 pb-40 bg-img" [ngStyle]="{'background-image': 'url(assets/img/slider/slider-2.jpg)'}">
+            <div class="container">
+                <div class="slider-content slider-animated-1 w-50 bg-slider">
+                    <h1 class="text-center">
+              FILL, DRINK AND REFILL
+            </h1>
+                    <h3 class="text-center">Fresh Heathy </h3>
+                    <div class="slider-btn mt-10 text-center">
+                        <a class="animated" href="#">Order Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            </ng-template>  
+            <ng-template class="slide" carouselSlide >
+                <div class="pt-40 pb-40 bg-img" [ngStyle]="{'background-image': 'url(assets/img/slider/slider-2.jpg)'}">
+                    <div class="container">
+                        <div class="slider-content slider-animated-1 w-50 bg-slider">
+                            <h1 class="text-center">
+                      FILL, DRINK AND REFILL
+                    </h1>
+                            <h3 class="text-center">Fresh Heathy </h3>
+                            <div class="slider-btn mt-10 text-center">
+                                <a class="animated" href="#">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                  </ng-template>  
+                
+        </owl-carousel-o>  
+      </div>
     <div class="banner-area row-col-decrease pt-50 pb-75 clearfix">
         <div class="container">
             <div class="banner-left-side mb-20">
@@ -1160,8 +1198,10 @@ demonstraverunt lectores legere me lius quod legunt saepius.</p>
                     </div>
                     <div class="tab-content jump">
                         <div id="tab4" class="tab-pane active">
-                            <!-- <div class="product-slider-active owl-carousel product-nav"> -->
-                            <div class="product-slider-active product-nav">
+                            <!-- <div class="product-slider-active owl-carousel product-nav"> 
+                            <div class="product-slider-active product-nav"> -->
+                                <owl-carousel-o [options]="customOptions">
+                                    <ng-template carouselSlide >
                                 <div class="product-wrapper">
                                     <div class="product-img">
                                         <!-- <a href="#"> -->
@@ -1187,6 +1227,8 @@ demonstraverunt lectores legere me lius quod legunt saepius.</p>
                                         </div>
                                     </div>
                                 </div>
+                                    </ng-template>
+                                    <ng-template carouselSlide >
                                 <div class="product-wrapper">
                                     <div class="product-img">
                                         <a href="#">
@@ -1211,6 +1253,8 @@ demonstraverunt lectores legere me lius quod legunt saepius.</p>
                                         </div>
                                     </div>
                                 </div>
+                                    </ng-template>
+                                    <ng-template carouselSlide >
                                 <div class="product-wrapper">
                                     <div class="product-img">
                                         <a href="#">
@@ -1236,6 +1280,8 @@ demonstraverunt lectores legere me lius quod legunt saepius.</p>
                                         </div>
                                     </div>
                                 </div>
+                                    </ng-template>
+                                    <ng-template carouselSlide >
                                 <div class="product-wrapper">
                                     <div class="product-img">
                                         <a href="#">
@@ -1260,10 +1306,13 @@ demonstraverunt lectores legere me lius quod legunt saepius.</p>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                                    </ng-template>
+                                </owl-carousel-o>
+                            <!-- </div>
+                        </div> -->
                         </div>
                         <div id="tab5" class="tab-pane">
-                            <div class="product-slider-active owl-carousel product-nav">
+                            <div class="product-slider-active product-nav">
                                 <div class="product-wrapper">
                                     <div class="product-img">
                                         <a href="#">
@@ -1480,29 +1529,50 @@ demonstraverunt lectores legere me lius quod legunt saepius.</p>
     </div>
     
     <div class="brand-logo-area pb-100">
+       
+            
         <div class="container">
-            <!-- <div class="brand-logo-active owl-carousel"> -->
+             <div class="brand-logo-active"> 
+                
                 <div class="brand-logo-active">
+                    <owl-carousel-o [options]="customOptions">
+                    <ng-template carouselSlide>
                 <div class="single-brand-logo">
                     <img alt="" src="assets/img/brand-logo/logo-1.png">
                 </div>
+            </ng-template>
+            <ng-template carouselSlide>
                 <div class="single-brand-logo">
                     <img alt="" src="assets/img/brand-logo/logo-2.png">
                 </div>
+            </ng-template>
+            <ng-template carouselSlide>
                 <div class="single-brand-logo">
                     <img alt="" src="assets/img/brand-logo/logo-3.png">
                 </div>
+            </ng-template>
+            <ng-template carouselSlide>
                 <div class="single-brand-logo">
                     <img alt="" src="assets/img/brand-logo/logo-4.png">
                 </div>
+            </ng-template>
+            <ng-template carouselSlide>
                 <div class="single-brand-logo">
                     <img alt="" src="assets/img/brand-logo/logo-5.png">
                 </div>
+            </ng-template>
+            <ng-template carouselSlide>
                 <div class="single-brand-logo">
                     <img alt="" src="assets/img/brand-logo/logo-2.png">
                 </div>
+            </ng-template>
+        </owl-carousel-o>
             </div>
+       
         </div>
+        </div>
+    
+   
     </div>
     <div class="footer-area black-bg-2 pt-70">
         <div class="footer-top-area pb-18">

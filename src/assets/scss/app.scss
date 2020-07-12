@@ -71,3 +71,9 @@
 @import 'apps/social'; //                    social
 @import 'apps/gallery'; //                   gallery
 @import 'apps/task'; //                      task
+
+/*---------------------------------
+-------------- owl-carousel-o ---------------
+---------------------------------*/
+@import '~ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
+@import '~ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
