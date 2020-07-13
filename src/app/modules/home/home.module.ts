@@ -4,10 +4,12 @@ import { CommonModule } from '@angular/common';
 import { HomeRoutingModule } from './home-routing.module';
 import { MainComponent } from './page/main/main.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
-import { ProductsComponent } from './products/products.component';
+import { ProductsComponent } from './page/products/products.component';
+import { ProductsDetailsComponent } from './page/products-details/products-details.component';
+
 
 @NgModule({
-  declarations: [MainComponent, ProductsComponent],
+  declarations: [MainComponent, ProductsComponent, ProductsDetailsComponent],
   imports: [
     CommonModule,
     
