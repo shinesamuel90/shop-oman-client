@@ -8,8 +8,8 @@ import { NgModule } from '@angular/core';
 import { AdminLayoutComponent } from './layout/admin-layout/admin-layout.component';
 import { AdminModule } from './modules/admin/admin.module';
 
- const AppRoutes: Routes = [
-   
+const AppRoutes: Routes = [
+
    {
         path: '',
         redirectTo: '/home/main',
@@ -21,11 +21,11 @@ import { AdminModule } from './modules/admin/admin.module';
     // //    pathMatch:'full'
     // //  },
       {
-        path:'admin',
-    component:AdminLayoutComponent,
-    loadChildren:()=>import('./modules/admin/admin.module').then(m=>AdminModule)
+        path: 'admin',
+    component: AdminLayoutComponent,
+    loadChildren: ( ) => import('./modules/admin/admin.module').then( m => AdminModule)
     },
-    { 
+    {
       path: 'home',
       component: HomeLayoutComponent,
       loadChildren: () =>
@@ -36,7 +36,7 @@ import { AdminModule } from './modules/admin/admin.module';
 ];
 
 @NgModule({
-    imports: [RouterModule.forRoot(AppRoutes,{ useHash: true })],
+    imports: [RouterModule.forRoot(AppRoutes, { useHash: true })],
     exports: [RouterModule]
   })
   export class AppRoutingModule { }
