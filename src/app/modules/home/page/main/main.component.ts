@@ -26,9 +26,53 @@ export class MainComponent implements OnInit {
       }
     }
   }
+  
+  slider2: OwlOptions = {
+    loop: true,
+    autoplay: false,
+    center: true,
+    dots: false,
+    autoHeight: true,
+    autoWidth: true,
+    responsive: {
+      0: {
+        items: 4,
+      },
+      600: {
+        items: 4,
+      },
+      1000: {
+        items: 4,
+      }
+    }
+  }
+
+
+  slider3: OwlOptions = {
+    loop: true,
+    autoplay: false,
+    center: true,
+    dots: false,
+    autoHeight: true,
+    autoWidth: true,
+    responsive: {
+      0: {
+        items: 4,
+      },
+      600: {
+        items: 4,
+      },
+      1000: {
+        items: 4,
+      }
+    }
+  }
+  
   constructor() { }
 
   ngOnInit(): void {
   }
 
 }
+
+
