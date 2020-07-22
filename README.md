@@ -221,3 +221,5 @@ The ~/src/styles directory can be used for compiling bootstrap and storing other
 ng build --prod
 ## create module with routing
 ng g m modules/home --routing
+## deploy angular to s3
+aws s3 sync dist/shop-oman/ s3://oman-online-shop --profile "shine"

@@ -26,7 +26,7 @@
                                 </a>
                             </div>
                             <div class="header-cart">
-                                <a href="#">
+                                <a [routerLink]="'/home/cart'">
                                     <div class="header-icon-style">
                                         <i class="icon-handbag icons"></i>
                                         <span class="count-style">02</span>
@@ -70,7 +70,7 @@
                                         <h4>Total : <span class="shop-total">$260.00</span></h4>
                                     </div>
                                     <div class="shopping-cart-btn">
-                                        <a href="#">view cart</a>
+                                        <a [routerLink]="'home/cart'">view cart</a>
                                         <a href="#">checkout</a>
                                     </div>
                                 </div>
@@ -115,45 +115,45 @@
                                             <li>
                                                 <ul>
                                                     <li class="mega-menu-title brand-title"><a href="#">Categories 01</a></li>
-                                                    <li><a href="shop.html">salad</a></li>
-                                                    <li><a href="shop.html">sandwich</a></li>
-                                                    <li><a href="shop.html">bread</a></li>
-                                                    <li><a href="shop.html">steak</a></li>
-                                                    <li><a href="shop.html">tuna steak</a></li>
-                                                    <li><a href="shop.html">spaghetti </a></li>
+                                                    <li><a [routerLink]="'/home/products'" >salad</a></li>
+                                                    <li><a [routerLink]="'/home/products'">sandwich</a></li>
+                                                    <li><a [routerLink]="'/home/products'">bread</a></li>
+                                                    <li><a [routerLink]="'/home/products'">steak</a></li>
+                                                    <li><a [routerLink]="'/home/products'">tuna steak</a></li>
+                                                    <li><a [routerLink]="'/home/products'">spaghetti </a></li>
                                                 </ul>
                                             </li>
                                             <li>
                                                 <ul>
                                                     <li class="mega-menu-title brand-title"><a href="#">Categories 02</a></li>
-                                                    <li><a href="shop.html">rice</a></li>
-                                                    <li><a href="shop.html">pizza</a></li>
-                                                    <li><a href="shop.html">hamburger</a></li>
-                                                    <li><a href="shop.html">eggs</a></li>
-                                                    <li><a href="shop.html">sausages</a></li>
-                                                    <li><a href="shop.html">apple juice</a></li>
+                                                    <li><a [routerLink]="'/home/products'">rice</a></li>
+                                                    <li><a [routerLink]="'/home/products'">pizza</a></li>
+                                                    <li><a [routerLink]="'/home/products'">hamburger</a></li>
+                                                    <li><a [routerLink]="'/home/products'">eggs</a></li>
+                                                    <li><a [routerLink]="'/home/products'">sausages</a></li>
+                                                    <li><a [routerLink]="'/home/products'">apple juice</a></li>
                                                 </ul>
                                             </li>
                                             <li>
                                                 <ul>
                                                     <li class="mega-menu-title brand-title"><a href="#">Categories 03</a></li>
-                                                    <li><a href="shop.html">milk</a></li>
-                                                    <li><a href="shop.html">grape juice</a></li>
-                                                    <li><a href="shop.html">cookie</a></li>
-                                                    <li><a href="shop.html">candy</a></li>
-                                                    <li><a href="shop.html">cake</a></li>
-                                                    <li><a href="shop.html">cupcake</a></li>
+                                                    <li><a [routerLink]="'/home/products'">milk</a></li>
+                                                    <li><a [routerLink]="'/home/products'">grape juice</a></li>
+                                                    <li><a [routerLink]="'/home/products'">cookie</a></li>
+                                                    <li><a [routerLink]="'/home/products'">candy</a></li>
+                                                    <li><a [routerLink]="'/home/products'">cake</a></li>
+                                                    <li><a [routerLink]="'/home/products'">cupcake</a></li>
                                                 </ul>
                                             </li>
                                             <li>
                                                 <ul>
                                                     <li class="mega-menu-title brand-title"><a href="#">Categories 04</a></li>
-                                                    <li><a href="shop.html">pie</a></li>
-                                                    <li><a href="shop.html">stoberry</a></li>
-                                                    <li><a href="shop.html">sandwich</a></li>
-                                                    <li><a href="shop.html">bread</a></li>
-                                                    <li><a href="shop.html">steak</a></li>
-                                                    <li><a href="shop.html">hamburger</a></li>
+                                                    <li><a [routerLink]="'/home/products'">pie</a></li>
+                                                    <li><a [routerLink]="'/home/products'">stoberry</a></li>
+                                                    <li><a [routerLink]="'/home/products'">sandwich</a></li>
+                                                    <li><a [routerLink]="'/home/products'">bread</a></li>
+                                                    <li><a [routerLink]="'/home/products'">steak</a></li>
+                                                    <li><a [routerLink]="'/home/products'">hamburger</a></li>
                                                 </ul>
                                             </li>
                                         </ul>
@@ -310,7 +310,7 @@
             <div class="banner-left-side mb-20">
                 <div class="single-banner">
                     <div class="hover-style">
-                        <a href="product-details.html"><img src="assets/img/banner/banner-1.jpg" alt=""></a>
+                        <a [routerLink]="'/home/productsDetails'" ><img src="assets/img/banner/banner-1.jpg" alt=""></a>
                     </div>
                 </div>
             </div>
@@ -360,7 +360,8 @@ demonstraverunt lectores legere me lius quod legunt saepius.</p>
                                         </div>
                                         <div class="pro-action-right">
                                             <a title="Wishlist" href="#"><i class="ion-ios-heart-outline"></i></a>
-                                            <a title="Quick View" data-toggle="modal" data-target="#exampleModal" href="#"><i class="ion-android-open"></i></a>
+                                            
+                                            <a title="Quick View" [routerLink]="'/home/productdetails'"><i class="ion-android-open"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -387,7 +388,7 @@ demonstraverunt lectores legere me lius quod legunt saepius.</p>
                                         </div>
                                         <div class="pro-action-right">
                                             <a title="Wishlist" href="#"><i class="ion-ios-heart-outline"></i></a>
-                                            <a title="Quick View" data-toggle="modal" data-target="#exampleModal" href="#"><i class="ion-android-open"></i></a>
+                                            <a title="Quick View" [routerLink]="'/home/productdetails'"><i class="ion-android-open"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -413,7 +414,7 @@ demonstraverunt lectores legere me lius quod legunt saepius.</p>
                                         </div>
                                         <div class="pro-action-right">
                                             <a title="Wishlist" href="#"><i class="ion-ios-heart-outline"></i></a>
-                                            <a title="Quick View" data-toggle="modal" data-target="#exampleModal" href="#"><i class="ion-android-open"></i></a>
+                                            <a title="Quick View" [routerLink]="'/home/productdetails'"><i class="ion-android-open"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -440,7 +441,7 @@ demonstraverunt lectores legere me lius quod legunt saepius.</p>
                                         </div>
                                         <div class="pro-action-right">
                                             <a title="Wishlist" href="#"><i class="ion-ios-heart-outline"></i></a>
-                                            <a title="Quick View" data-toggle="modal" data-target="#exampleModal" href="#"><i class="ion-android-open"></i></a>
+                                            <a title="Quick View" [routerLink]="'/home/productdetails'"><i class="ion-android-open"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -466,7 +467,7 @@ demonstraverunt lectores legere me lius quod legunt saepius.</p>
                                         </div>
                                         <div class="pro-action-right">
                                             <a title="Wishlist" href="#"><i class="ion-ios-heart-outline"></i></a>
-                                            <a title="Quick View" data-toggle="modal" data-target="#exampleModal" href="#"><i class="ion-android-open"></i></a>
+                                            <a title="Quick View" [routerLink]="'/home/productdetails'"><i class="ion-android-open"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -493,7 +494,7 @@ demonstraverunt lectores legere me lius quod legunt saepius.</p>
                                         </div>
                                         <div class="pro-action-right">
                                             <a title="Wishlist" href="#"><i class="ion-ios-heart-outline"></i></a>
-                                            <a title="Quick View" data-toggle="modal" data-target="#exampleModal" href="#"><i class="ion-android-open"></i></a>
+                                            <a title="Quick View" [routerLink]="'/home/productdetails'"><i class="ion-android-open"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -519,7 +520,7 @@ demonstraverunt lectores legere me lius quod legunt saepius.</p>
                                         </div>
                                         <div class="pro-action-right">
                                             <a title="Wishlist" href="#"><i class="ion-ios-heart-outline"></i></a>
-                                            <a title="Quick View" data-toggle="modal" data-target="#exampleModal" href="#"><i class="ion-android-open"></i></a>
+                                            <a title="Quick View" [routerLink]="'/home/productdetails'"><i class="ion-android-open"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -546,7 +547,7 @@ demonstraverunt lectores legere me lius quod legunt saepius.</p>
                                         </div>
                                         <div class="pro-action-right">
                                             <a title="Wishlist" href="#"><i class="ion-ios-heart-outline"></i></a>
-                                            <a title="Quick View" data-toggle="modal" data-target="#exampleModal" href="#"><i class="ion-android-open"></i></a>
+                                            <a title="Quick View" [routerLink]="'/home/productdetails'"><i class="ion-android-open"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -572,7 +573,7 @@ demonstraverunt lectores legere me lius quod legunt saepius.</p>
                                         </div>
                                         <div class="pro-action-right">
                                             <a title="Wishlist" href="#"><i class="ion-ios-heart-outline"></i></a>
-                                            <a title="Quick View" data-toggle="modal" data-target="#exampleModal" href="#"><i class="ion-android-open"></i></a>
+                                            <a title="Quick View" [routerLink]="'/home/productdetails'"><i class="ion-android-open"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -599,7 +600,7 @@ demonstraverunt lectores legere me lius quod legunt saepius.</p>
                                         </div>
                                         <div class="pro-action-right">
                                             <a title="Wishlist" href="#"><i class="ion-ios-heart-outline"></i></a>
-                                            <a title="Quick View" data-toggle="modal" data-target="#exampleModal" href="#"><i class="ion-android-open"></i></a>
+                                            <a title="Quick View" [routerLink]="'/home/productdetails'"><i class="ion-android-open"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -629,7 +630,7 @@ demonstraverunt lectores legere me lius quod legunt saepius.</p>
                                         </div>
                                         <div class="pro-action-right">
                                             <a title="Wishlist" href="#"><i class="ion-ios-heart-outline"></i></a>
-                                            <a title="Quick View" data-toggle="modal" data-target="#exampleModal" href="#"><i class="ion-android-open"></i></a>
+                                            <a title="Quick View" [routerLink]="'/home/productdetails'"><i class="ion-android-open"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -656,7 +657,7 @@ demonstraverunt lectores legere me lius quod legunt saepius.</p>
                                         </div>
                                         <div class="pro-action-right">
                                             <a title="Wishlist" href="#"><i class="ion-ios-heart-outline"></i></a>
-                                            <a title="Quick View" data-toggle="modal" data-target="#exampleModal" href="#"><i class="ion-android-open"></i></a>
+                                            <a title="Quick View" [routerLink]="'/home/productdetails'"><i class="ion-android-open"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -682,7 +683,7 @@ demonstraverunt lectores legere me lius quod legunt saepius.</p>
                                         </div>
                                         <div class="pro-action-right">
                                             <a title="Wishlist" href="#"><i class="ion-ios-heart-outline"></i></a>
-                                            <a title="Quick View" data-toggle="modal" data-target="#exampleModal" href="#"><i class="ion-android-open"></i></a>
+                                            <a title="Quick View" [routerLink]="'/home/productdetails'"><i class="ion-android-open"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -709,7 +710,7 @@ demonstraverunt lectores legere me lius quod legunt saepius.</p>
                                         </div>
                                         <div class="pro-action-right">
                                             <a title="Wishlist" href="#"><i class="ion-ios-heart-outline"></i></a>
-                                            <a title="Quick View" data-toggle="modal" data-target="#exampleModal" href="#"><i class="ion-android-open"></i></a>
+                                            <a title="Quick View" [routerLink]="'/home/productdetails'"><i class="ion-android-open"></i></a>
                                         </div>
                                     </div>
                                 </div>

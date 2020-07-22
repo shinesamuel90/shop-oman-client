@@ -6,10 +6,11 @@ import { MainComponent } from './page/main/main.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { ProductsComponent } from './page/products/products.component';
 import { ProductsDetailsComponent } from './page/products-details/products-details.component';
+import { CartComponent } from './page/cart/cart.component';
 
 
 @NgModule({
-  declarations: [MainComponent, ProductsComponent, ProductsDetailsComponent],
+  declarations: [MainComponent, ProductsComponent, ProductsDetailsComponent, CartComponent],
   imports: [
     CommonModule,
     
